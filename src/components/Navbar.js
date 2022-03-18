@@ -23,7 +23,7 @@ const NavMenu = styled.div`
 const Navbar = () => {
   return (
     <Nav>
-        <Logo exact to='/'>ELIXR</Logo>
+        <Logo to='/'>ELIXR</Logo>
         <MenuBars />
         <NavMenu>
         </NavMenu>
