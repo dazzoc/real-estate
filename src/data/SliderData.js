@@ -1,3 +1,11 @@
+import ImageOne from '../images/ImageOne.jpg';
+import ImageTwo from '../images/ImageTwo.jpg';
+import ImageThree from '../images/ImageThree.jpg';
+import ImageFour from '../images/ImageFour.jpg';
+import ImageFive from '../images/ImageFive.jpg';
+import ImageSix from '../images/ImageSix.jpg';
+import ImageSeven from '../images/ImageSeven.jpg';
+
 export const SliderData = [
     {
         title: 'House in Knoxville, Tennessee',
