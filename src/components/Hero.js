@@ -149,11 +149,17 @@ const Hero = ({ slides }) => {
     }, [current, length]);
 
     const nextSlide = () => {
+        if(timeout.current) {
+            clearTimeout(timeout.current);
+        }
         setCurent(current === length - 1 ? 0 : current + 1);
         // console.log(current)
     };
 
     const prevSlide = () => {
+        if(timeout.current) {
+            clearTimeout(timeout.current);
+        }
         setCurent(current === 0 ? length - 1 : current - 1);
     };
 
