@@ -32,8 +32,8 @@ export const SliderData = [
         alt: 'House'
     },
     {
-        title: 'House in Bern, Switzerland',
-        price: '$1,660,000',
+        title: 'House in Boulder, Colorado',
+        price: '$1,160,000',
         path: '/homes',
         label: 'View Home',
         image: ImageFour,
