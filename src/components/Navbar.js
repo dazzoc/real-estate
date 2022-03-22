@@ -14,7 +14,6 @@ const Nav = styled.nav`
     position: fixed;
     width: 100%;
     height: 60px;
-    background: red;
 `;
 
 const NavLink = css`
@@ -39,6 +38,7 @@ const MenuBars = styled(FaBars)`
         display: block;
         cursor: pointer;
         position: absolute;
+        color: #fff;
         top: 0;
         right: 0;
         transform: translate(-60%, 50%);
@@ -72,7 +72,7 @@ const NavBtn = styled.div`
 const Navbar = () => {
   return (
     <Nav>
-        <Logo to='/'>ELIXR</Logo>
+        <Logo to='/'>@HOMES</Logo>
         <MenuBars size={30}/>
         <NavMenu>
             {menuData.map((item, index) => (

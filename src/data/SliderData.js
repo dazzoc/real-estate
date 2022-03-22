@@ -33,7 +33,7 @@ export const SliderData = [
     },
     {
         title: 'House in Bern, Switzerland',
-        price: '$3,660,000',
+        price: '$1,660,000',
         path: '/homes',
         label: 'View Home',
         image: ImageFour,
