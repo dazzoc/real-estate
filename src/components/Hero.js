@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import styled, { css } from "styled-components/macro";
 import { Button } from "./Button";
 import {IoMdArrowRoundForward} from 'react-icons/io';
@@ -134,14 +134,32 @@ const Hero = ({ slides }) => {
     const length = slides.length
     const timeout = useRef(null)
 
+    useEffect(() => {
+        const nextSlide = () => {
+            setCurent(current => (current === length - 1 ? 0 : current + 1));
+        };
+
+        timeout.current = setTimeout(nextSlide, 4000);
+
+        return function () {
+            if(timeout.current) {
+                clearTimeout(timeout.current);
+            }
+        };
+    }, [current, length]);
+
     const nextSlide = () => {
-        setCurent(current === length - 1 ? 0 : current + 1)
+        setCurent(current === length - 1 ? 0 : current + 1);
         // console.log(current)
-    }
+    };
 
     const prevSlide = () => {
-        setCurent(current === 0 ? length - 1 : current - 1)
-    }
+        setCurent(current === 0 ? length - 1 : current - 1);
+    };
+
+    if(!Array.isArray(slides) || slides.length <= 0) {
+        return null;
+    };
 
   return (
     <HeroSection>
