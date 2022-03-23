@@ -67,6 +67,7 @@ const HeroImage = styled.img`
 
 const HeroContent = styled.div`
     position: relative;
+    top: 250px;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -134,19 +135,19 @@ const Hero = ({ slides }) => {
     const length = slides.length
     const timeout = useRef(null)
 
-    useEffect(() => {
-        const nextSlide = () => {
-            setCurent(current => (current === length - 1 ? 0 : current + 1));
-        };
+    // useEffect(() => {
+    //     const nextSlide = () => {
+    //         setCurent(current => (current === length - 1 ? 0 : current + 1));
+    //     };
 
-        timeout.current = setTimeout(nextSlide, 4000);
+    //     timeout.current = setTimeout(nextSlide, 4000);
 
-        return function () {
-            if(timeout.current) {
-                clearTimeout(timeout.current);
-            }
-        };
-    }, [current, length]);
+    //     return function () {
+    //         if(timeout.current) {
+    //             clearTimeout(timeout.current);
+    //         }
+    //     };
+    // }, [current, length]);
 
     const nextSlide = () => {
         if(timeout.current) {
