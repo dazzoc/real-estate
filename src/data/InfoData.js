@@ -1,5 +1,5 @@
-import ImageOne from '../images/ImageFour';
-import ImageTwo from '../images/ImageFive';
+import ImageOne from '../images/interior-1.jpg';
+import ImageTwo from '../images/ImageFive.jpg';
 
 
 export const InfoData = {
@@ -13,7 +13,7 @@ export const InfoData = {
 };
 
 export const InfoDataTwo = {
-    heading: 'Rustic Rehab Designs', 
+    heading: 'Rustic Designs', 
     paragraohOne: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, veniam.',
     paragraphTwo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias placeat doloremque.',
     buttonLable: 'View Homes',
